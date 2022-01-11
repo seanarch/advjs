@@ -1,6 +1,7 @@
-function greetUser(userName = 'user') {
-    console.log('Hi ' + userName + '!');
+function greetUser(greetingPrefix, userName = 'user') {
+    console.log(greetingPrefix + ' ' + userName + '!');
 }
 
-greetUser('Max');
-greetUser();
+greetUser('Hi', 'Max');
+greetUser('Hello');
+greetUser('Hello', 'John');
